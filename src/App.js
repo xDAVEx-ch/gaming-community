@@ -1,10 +1,14 @@
-import { Button, Colors } from 'react-foundation';
+import React from 'react';
+
+import { Route } from 'react-router-dom';
+
+import LandingPage from './pages/landing-page';
 
 function App() {
   return (
-    <div>
-      <Button color={Colors.SUCCESS}>Submit</Button>
-    </div>
+    <>
+      <Route exact path='/' component={ LandingPage }/>
+    </>
   );
 }
 
