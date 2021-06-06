@@ -78,8 +78,9 @@ $foundation-palette: (
   //success: #3adb76,
   //warning: #ffae00,
   warning: #FECE7A,
-  alert: #ED2939
+  alert: #ED2939,
   //alert: #cc4b37,
+  light: #F8F9FB
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -179,7 +180,8 @@ $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $enable-code-inline: true;
-$anchor-color: $primary-color;
+//$anchor-color: $primary-color;
+$anchor-color: $white;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -881,8 +883,10 @@ $tooltip-radius: $global-radius;
 // 55. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+//$topbar-padding: 0.5rem;
+$topbar-padding: 0.7rem;
+//$topbar-background: $light-gray;
+$topbar-background: get-color(primary);
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
