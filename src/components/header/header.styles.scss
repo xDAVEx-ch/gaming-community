@@ -1,0 +1,12 @@
+.header-hollow-white-btn{
+  border-color: #F8F9FB !important;
+  color: #F8F9FB !important;
+}
+
+.header-hollow-white-btn:hover{
+  border-color: scale-color(#F8F9FB, $lightness: -14%) !important;
+}
+
+.logo{
+  user-select: none;
+}
