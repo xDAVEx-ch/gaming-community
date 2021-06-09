@@ -20,11 +20,8 @@ const Header = () => {
   return (
     <header class="top-bar">
 
-      <Menu>
-        <MenuText>
-          <Link to='/' className='logo'>GAMING</Link>
-        </MenuText>
-      </Menu>
+      
+      <Link to='/' className='logo'>GAMING</Link>
 
       <div className='top-bar-right'>
 
