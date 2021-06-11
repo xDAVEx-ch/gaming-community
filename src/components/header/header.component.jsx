@@ -5,7 +5,7 @@ import React from 'react';
 import {
   Menu,
   MenuItem,
-  MenuText,
+  Alignments,
   Button
 } from 'react-foundation';
 
@@ -23,16 +23,13 @@ const Header = () => {
       
       <Link to='/' className='logo'>GAMING</Link>
 
-      <div className='top-bar-right'>
-
-        <Menu>
+        <Menu alignment={Alignments.RIGHT}>
           <MenuItem>
 
             <Link to='/signup'>
               <Button 
                   isHollow 
                   className='header-hollow-white-btn'
-                  style={{ marginRight: '20px' }}
                 >Sign up
               </Button>
             </Link>
@@ -49,8 +46,6 @@ const Header = () => {
           </li>
 
         </Menu>
-
-      </div>
 
     </header>
   );

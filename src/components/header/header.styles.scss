@@ -1,6 +1,11 @@
 .header-hollow-white-btn{
   border-color: #F8F9FB !important;
   color: #F8F9FB !important;
+  margin-right: 20px !important;
+
+  @media screen and (max-width: 600px){
+    margin-right: 0 !important;
+  }
 }
 
 .header-hollow-white-btn:hover{
