@@ -1,0 +1,52 @@
+@import './../../settings.scss';
+
+$hero-height: 85vh;
+
+.hero-section{
+  background: linear-gradient(rgba(#000, .7),rgba(#000, .7)),
+    url('./../../assets/hero-main-image.jpg') center no-repeat;
+  background-size: cover;
+  padding: $global-padding;
+  height: $hero-height;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (max-width: 550px) {
+    height: 75vh;
+  }
+
+}
+
+.hero-section-text {
+  text-align: left;
+  color: $white;
+  width: 50%;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 800px){
+    width: 80%;
+  }
+
+  @media screen and (max-width: 550px){
+    width: 100%;
+    text-align: center;
+
+    h1{
+      width: 100%;
+    }
+  }
+  
+}
+
+.hero-section-button-group{
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+
+  @media screen and (max-width: 550px) {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
