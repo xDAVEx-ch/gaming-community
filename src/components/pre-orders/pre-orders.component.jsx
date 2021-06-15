@@ -21,7 +21,7 @@ const PreOrders = () => (
 
     <Grid>
 
-      <Cell medium='4' className='align-self-middle'>
+      <Cell medium='4' className='align-self-middle pre-order-description'>
 
         <h2>Pre-orders</h2>
         <p className='pre-order-text-description'>
@@ -40,9 +40,9 @@ const PreOrders = () => (
 
         {/* ------ First inner grid -------*/}
 
-        <Grid className='pre-order-grid grid-margin-x' alignX={Alignments.RIGHT}>
+        <Grid className='pre-order-game-grid grid-margin-x' alignX={Alignments.RIGHT}>
 
-          <Cell medium='3'>
+          <Cell small='4' medium='3'>
             <div className='pre-order-game-cover'><img src={cover1} alt='cover' /></div>
             <p className='pre-order-game-title'>
               Alice Madness Returns
@@ -50,7 +50,7 @@ const PreOrders = () => (
             </p>
           </Cell>
 
-          <Cell medium='3'>
+          <Cell small='4' medium='3'>
             <div className='pre-order-game-cover'><img src={cover2} alt='cover' /></div>
             <p className='pre-order-game-title'>
               Bully: Scholarship Edition
@@ -58,7 +58,7 @@ const PreOrders = () => (
             </p>
           </Cell>
 
-          <Cell medium='3'>
+          <Cell small='4' medium='3'>
             <div className='pre-order-game-cover'><img src={cover3} alt='cover' /></div>
             <p className='pre-order-game-title'>
               Crash N'Sanity Trilogy
@@ -72,7 +72,7 @@ const PreOrders = () => (
 
         <Grid className='pre-order-grid grid-margin-x' alignX={Alignments.RIGHT}>
 
-          <Cell medium='3'>
+          <Cell small='4' medium='3'>
             <div className='pre-order-game-cover'><img src={cover4} alt='cover' /></div>
             <p className='pre-order-game-title'>
               Driver San Francisco
@@ -80,7 +80,7 @@ const PreOrders = () => (
             </p>
           </Cell>
 
-          <Cell medium='3'>
+          <Cell small='4' medium='3'>
             <div className='pre-order-game-cover'><img src={cover5} alt='cover' /></div>
             <p className='pre-order-game-title'>
               Grand Theft Auto V
@@ -88,7 +88,7 @@ const PreOrders = () => (
             </p>
           </Cell>
 
-          <Cell medium='3'>
+          <Cell small='4' medium='3'>
             <div className='pre-order-game-cover'><img src={cover6} alt='cover' /></div>
             <p className='pre-order-game-title'>
               Killing Floor 2

@@ -3,9 +3,19 @@
 .bg-split{
   background: linear-gradient(90deg, get-color(primary) 40%,
     get-color(secondary) 40%);
+
+  @media screen and (max-width: 723px){
+    background: linear-gradient(180deg, get-color(primary) 32%,
+    get-color(secondary) 32%);
+  }
+
+  @media screen and (max-width: 450px){
+    background: linear-gradient(180deg, get-color(primary) 40%,
+    get-color(secondary) 40%);
+  }
 }
 
-.pre-order-grid{
+.pre-order-game-grid{
 
   :nth-child(3n){
     margin-right: 0;
@@ -17,6 +27,32 @@
   img{
     height: 249px;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1050px) {
+    img{
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    img{
+      height: 150px;
+    }
+  }
+
+  @media screen and (max-width: 723px) {
+    img{
+      height: 249px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    img{
+      height: 150px;
+    }
   }
 }
 
@@ -28,6 +64,22 @@
     font-size: 16px;
     font-weight: bolder;
     display: block;
+  }
+
+  @media screen and (max-width: 800px) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    span{
+      font-size: 12px;
+    }
+  }
+}
+
+.pre-order-description{
+  @media screen and (max-width: 723px) {
+    margin-bottom: 75px;
   }
 }
 
