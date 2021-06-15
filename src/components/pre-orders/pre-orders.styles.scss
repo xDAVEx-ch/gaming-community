@@ -1,0 +1,36 @@
+@import './../../settings.scss';
+
+.bg-split{
+  background: linear-gradient(90deg, get-color(primary) 40%,
+    get-color(secondary) 40%);
+}
+
+.pre-order-grid{
+
+  :nth-child(3n){
+    margin-right: 0;
+  }
+}
+
+.pre-order-game-cover{
+
+  img{
+    height: 249px;
+    object-fit: cover;
+  }
+}
+
+.pre-order-game-title{
+  font-size: 14px;
+  text-align: center;
+
+  span{
+    font-size: 16px;
+    font-weight: bolder;
+    display: block;
+  }
+}
+
+.pre-order-text-description{
+  margin-bottom: 45px;
+}
