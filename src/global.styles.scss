@@ -6,3 +6,8 @@
 
 //Importing foundation styles
 @import '~foundation-sites/assets/foundation';
+
+//Updating section padding
+section {
+    padding: 40px $global-padding;
+}
