@@ -18,8 +18,7 @@ import './header.styles.scss';
 const Header = () => {
 
   return (
-    <header class="top-bar">
-
+    <header class="top-bar" id="example-menu">
       
       <Link to='/' className='logo'>GAMING</Link>
 

@@ -17,6 +17,18 @@ $hero-height: 85vh;
     height: 75vh;
   }
 
+  @media screen and (max-width: 500px) {
+    height: 65vh;
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 55vh;
+  }
+
+  @media screen and (max-width: 350px) {
+    height: 45vh;
+  }
+
 }
 
 .hero-section-text {
