@@ -1,0 +1,27 @@
+@import './../pre-orders/pre-orders.styles.scss';
+
+.bg-split-inverse{
+  background: linear-gradient(90deg, get-color(secondary) 60%,
+    get-color(primary) 60%);
+
+  @media screen and (max-width: 723px){
+    background: linear-gradient(180deg, get-color(secondary) 32%,
+    get-color(primary) 32%);
+  }
+
+  @media screen and (max-width: 450px){
+    background: linear-gradient(180deg, get-color(secondary) 60%,
+    get-color(primary) 60%);
+  }
+}
+
+.new-releases-description{
+  text-align: right;
+}
+
+.new-releases-game-grid{
+
+  :first-child{
+    margin-left: 0;
+  }
+}

@@ -4,6 +4,7 @@ import Header from './../../components/header';
 import Hero from './../../components/hero';
 import PreOrders from './../../components/pre-orders';
 import NewEvents from './../../components/new-events';
+import NewReleases from './../../components/new-releases';
 
 const LandingPage = () =>(
   <>
@@ -11,6 +12,7 @@ const LandingPage = () =>(
     <Hero />
     <PreOrders />
     <NewEvents />
+    <NewReleases />
   </>
 );
 

@@ -6,9 +6,6 @@ import { Button, GridContainer, Grid, Cell, Alignments } from 'react-foundation'
 
 import { Link } from 'react-router-dom';
 
-//My ow imports
-import './new-events.styles.scss';
-
 const NewEvents = () =>(
   <section>
     <GridContainer>
