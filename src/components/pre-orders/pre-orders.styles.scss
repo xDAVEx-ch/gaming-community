@@ -9,16 +9,9 @@
     get-color(secondary) 32%);
   }
 
-  @media screen and (max-width: 450px){
-    background: linear-gradient(180deg, get-color(primary) 40%,
-    get-color(secondary) 40%);
-  }
-}
-
-.game-grid{
-
-  :nth-child(3n){
-    margin-right: 0;
+  @media screen and (max-width: 500px){
+    background: linear-gradient(180deg, get-color(primary) 25%,
+    get-color(secondary) 25%);
   }
 }
 
@@ -78,6 +71,7 @@
 }
 
 .pre-order-description{
+  width: 80%;
   @media screen and (max-width: 723px) {
     margin-bottom: 75px;
   }
