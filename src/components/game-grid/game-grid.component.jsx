@@ -20,13 +20,22 @@ import './game-grid.styles.scss';
 const GameGrid = ({ maxNumItemsRow, buttonText, position = 'left' }) => {
 
   const dimensions = useMediaQuery();
-  const upperCasePosition = position.toUpperCase();
+  let positionStyles = {}
+
+  if(position === 'right'){
+    positionStyles = {
+      marginLeft: 'auto'
+    }
+  }
 
   return (
-    <Grid upOnLarge={maxNumItemsRow} className='game-grid' alignX={Alignments[upperCasePosition]}>
+    <Grid upOnLarge={maxNumItemsRow} className='game-grid' alignX='right'>
 
       <Cell small={dimensions.width > 500 ? '4': '6'}>
-        <div className={`game-item ${buttonText ? 'game-separationY' : ''}`}>
+        <div 
+          className={`game-item ${buttonText ? 'game-separationY' : ''}`} 
+          style={positionStyles}
+        >
           <img src={cover1} alt='art box game' className='game-cover' />
           <p className='game-info'>
             Alice Madness Returns
@@ -41,7 +50,10 @@ const GameGrid = ({ maxNumItemsRow, buttonText, position = 'left' }) => {
       </Cell>
 
       <Cell small={dimensions.width > 500 ? '4': '6'}>
-        <div className='game-item'>
+        <div 
+          className={`game-item ${buttonText ? 'game-separationY' : ''}`}
+          style={positionStyles}
+        >
           <img src={cover2} alt='art box game' className='game-cover' />
           <p className='game-info'>
             Bully: Scholarship Edition
@@ -56,7 +68,10 @@ const GameGrid = ({ maxNumItemsRow, buttonText, position = 'left' }) => {
       </Cell>
 
       <Cell small={dimensions.width > 500 ? '4': '6'}>
-        <div className='game-item'>
+        <div 
+          className={`game-item ${buttonText ? 'game-separationY' : ''}`}
+          style={positionStyles}
+        >
           <img src={cover3} alt='art box game' className='game-cover' />
           <p className='game-info'>
             Crash N'Sanity Trilogy
@@ -71,7 +86,10 @@ const GameGrid = ({ maxNumItemsRow, buttonText, position = 'left' }) => {
       </Cell>
 
       <Cell small={dimensions.width > 500 ? '4': '6'}>
-        <div className='game-item'>
+        <div
+          className={`game-item ${buttonText ? 'game-separationY' : ''}`}
+          style={positionStyles}
+        >
           <img src={cover4} alt='art box game' className='game-cover' />
           <p className='game-info'>
             Driver San Francisco
@@ -86,7 +104,10 @@ const GameGrid = ({ maxNumItemsRow, buttonText, position = 'left' }) => {
       </Cell>
 
       <Cell small={dimensions.width > 500 ? '4': '6'}>
-        <div className='game-item'>
+        <div 
+          className={`game-item ${buttonText ? 'game-separationY' : ''}`}
+          style={positionStyles}
+        >
           <img src={cover5} alt='art box game' className='game-cover' />
           <p className='game-info'>
             Grand Theft Auto V
@@ -101,7 +122,10 @@ const GameGrid = ({ maxNumItemsRow, buttonText, position = 'left' }) => {
       </Cell>
 
       <Cell small={dimensions.width > 500 ? '4': '6'}>
-        <div className='game-item'>
+        <div 
+          className={`game-item ${buttonText ? 'game-separationY' : ''}`}
+          style={positionStyles}
+        >
           <img src={cover6} alt='art box game' className='game-cover' />
           <p className='game-info'>
             Killing Floor 2
