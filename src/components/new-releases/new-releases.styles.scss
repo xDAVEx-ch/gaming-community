@@ -5,18 +5,41 @@
     get-color(primary) 60%);
 
   @media screen and (max-width: 723px){
-    background: linear-gradient(180deg, get-color(secondary) 32%,
-    get-color(primary) 32%);
+    background: linear-gradient(180deg, get-color(secondary) 74%,
+    get-color(primary) 74%);
   }
 
-  @media screen and (max-width: 450px){
-    background: linear-gradient(180deg, get-color(secondary) 60%,
-    get-color(primary) 60%);
+  @media screen and (max-width: 600px){
+    background: linear-gradient(180deg, get-color(secondary) 71%,
+    get-color(primary) 71%);
+  }
+
+  @media screen and (max-width: 500px){
+    background: linear-gradient(180deg, get-color(secondary) 79%,
+    get-color(primary) 79%);
+  }
+
+  @media screen and (max-width: 488px){
+    background: linear-gradient(180deg, get-color(secondary) 77%,
+    get-color(primary) 77%);
+  }
+
+  @media screen and (max-width: 396px){
+    background: linear-gradient(180deg, get-color(secondary) 76%,
+    get-color(primary) 76%);
+  }
+
+  @media screen and (max-width: 358px){
+    background: linear-gradient(180deg, get-color(secondary) 74%,
+    get-color(primary) 74%);
   }
 }
 
 .new-releases-description{
   text-align: right;
+  width: 80%;
+  margin-left: auto;
+  margin-top: 75px;
 }
 
 .new-releases-game-grid{
