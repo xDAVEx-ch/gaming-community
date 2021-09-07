@@ -5,6 +5,7 @@ import Hero from './../../components/hero';
 import PreOrders from './../../components/pre-orders';
 import NewEvents from './../../components/new-events';
 import NewReleases from './../../components/new-releases';
+import DiscountGames from './../../components/discount-games';
 
 const LandingPage = () =>(
   <>
@@ -13,6 +14,7 @@ const LandingPage = () =>(
     <PreOrders />
     <NewEvents />
     <NewReleases />
+    <DiscountGames />
   </>
 );
 

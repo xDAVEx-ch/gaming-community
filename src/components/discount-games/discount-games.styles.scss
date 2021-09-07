@@ -1,0 +1,47 @@
+@import './../../settings.scss';
+
+$-zf-flex-justify: (
+  'left': flex-start,
+  'right': flex-end,
+  'center': center,
+  'justify': space-between,
+  'spaced': space-around,
+);
+
+.discount-price {
+  padding-right: 15px;
+}
+
+.discount-gradient {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background: linear-gradient(180deg, rgba(51,48,59,1) 35%, rgba(55,80,92,1) 85%);
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+
+  @media screen and (max-width: 700px){
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    padding-bottom: 170px;
+  }
+}
+
+.discount-game-cover{
+  width: 90%;
+
+  @media screen and (max-width: 700px){
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.discount-description{
+  @media screen and (max-width: 700px) {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.discount-buying-details{
+  @media screen and (max-width: 700px){
+    @include flex-align($x: center, $y: middle);
+  }
+}
