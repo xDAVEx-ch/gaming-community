@@ -6,6 +6,8 @@ import PreOrders from './../../components/pre-orders';
 import NewEvents from './../../components/new-events';
 import NewReleases from './../../components/new-releases';
 import DiscountGames from './../../components/discount-games';
+import CtaSection from './../../components/cta-section';
+import Footer from './../../components/footer';
 
 const LandingPage = () =>(
   <>
@@ -15,6 +17,8 @@ const LandingPage = () =>(
     <NewEvents />
     <NewReleases />
     <DiscountGames />
+    <CtaSection />
+    <Footer />
   </>
 );
 
