@@ -8,6 +8,7 @@ import './discount-games.styles.scss';
 
 const DiscountGames = () => (
   <section className='discount-gradient'>
+    <div className='test'></div>
     <GridContainer>
       <Grid gutters='margin' alignX={Alignments.CENTER}>
 

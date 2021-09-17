@@ -14,34 +14,44 @@ $-zf-flex-justify: (
 
 .discount-gradient {
   padding-top: 140px;
-  padding-bottom: 140px;
+  padding-bottom: 220px;
   background: linear-gradient(180deg, rgba(51,48,59,1) 35%, rgba(55,80,92,1) 85%);
-  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+  position: relative;
 
-  @media screen and (max-width: 700px){
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-    padding-bottom: 170px;
+  @media screen and (max-width: 720px){
+    padding-bottom: 250px;
   }
+}
+
+.test{
+  clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  left: 0;
+  top: 78%;
+  background: linear-gradient(rgba(get-color(secondary), .8), rgba(get-color(secondary), .8)), 
+    url('./../../assets/hero-secondary-image.jpg') center / cover;
 }
 
 .discount-game-cover{
   width: 90%;
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 720px){
     width: 70%;
     margin: 0 auto;
   }
 }
 
 .discount-description{
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 720px) {
     margin-top: 20px;
     text-align: center;
   }
 }
 
 .discount-buying-details{
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 720px){
     @include flex-align($x: center, $y: middle);
   }
 }
