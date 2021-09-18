@@ -5,7 +5,7 @@ import './footer.styles.scss';
 const Footer = () =>(
   <footer>
     <div>
-      <h3>About us</h3>
+      <h3 className='h5'>About us</h3>
       <p>
         Curiously, the optimization of the criterion the
         minor details of specific action result the
@@ -14,7 +14,7 @@ const Footer = () =>(
       </p>
     </div>
     <div>
-      <h3>Acknowledgment</h3>
+      <h3 className='h5'>Acknowledgment</h3>
       <ol>
         <li>
           <a href="http://google.com" target="_blank" rel="noopener noreferrer">
@@ -39,7 +39,7 @@ const Footer = () =>(
       </ol>
     </div>
     <div>
-      <h3>Connect with us</h3>
+      <h3 className='h5'>Connect with us</h3>
       <ul>
         <li>Facebook</li>
         <li>Twitter</li>
