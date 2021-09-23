@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Vendors imports
-import { Grid, Cell, Button, Alignments, Colors } from 'react-foundation';
+import { Grid, Cell, Button } from 'react-foundation';
 
 import { Link } from 'react-router-dom';
 

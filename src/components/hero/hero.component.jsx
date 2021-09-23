@@ -1,12 +1,6 @@
 import React from 'react';
 
-import {
-  Button,
-  Colors,
-  Alignments,
-  Grid,
-  Cell
-} from 'react-foundation';
+import { Button, Colors } from 'react-foundation';
 
 import './hero.styles.scss';
 
