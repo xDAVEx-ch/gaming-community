@@ -3,5 +3,32 @@
 footer{
   margin-top: 370px;
   background-color: get-color(primary);
-  padding: 30px 0;
+}
+
+.footer{
+  @media screen and (max-width: 900px) {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+h3.footer-title{
+  @media screen and (max-width: 900px) {
+    line-height: 32px;
+    padding-bottom: 10px;
+  }
+}
+
+.menu > li > a {
+  line-height: 1.5;
+  padding: 0;
+}
+
+.menu > li > .footer-social-link{
+  line-height: 32px;
+  padding-bottom: 10px;
+
+  @media screen and (max-width: 900px){
+    padding: 0 20px 10px 0;
+  }
 }
