@@ -1,6 +1,8 @@
 //React imports
 import React from 'react';
 
+import { useLocation } from 'react-router-dom';
+
 //Vendors imports
 import {
   Menu,
@@ -17,6 +19,8 @@ import './header.styles.scss';
 
 const Header = () => {
 
+  const pathName = useLocation().pathname;
+
   return (
     <header class="top-bar" id="example-menu">
       
@@ -25,13 +29,19 @@ const Header = () => {
         <Menu alignment={Alignments.RIGHT}>
           <MenuItem>
 
-            <Link to='/signup'>
-              <Button 
-                  isHollow 
-                  className='header-hollow-white-btn'
-                >Sign up
-              </Button>
-            </Link>
+            {
+              pathName.includes('/signup')
+              ? ''
+              : (
+                <Link to='/signup'>
+                  <Button 
+                    isHollow 
+                    className='header-hollow-white-btn'
+                  >Sign up
+                  </Button>
+                </Link>
+              )
+            }
 
           </MenuItem>
 
