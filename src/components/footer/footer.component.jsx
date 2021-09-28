@@ -20,7 +20,7 @@ import useMediaQuery from './../../effects/useMediaQuery';
 
 import './footer.styles.scss';
 
-const Footer = () => {
+const Footer = ({ acknowledgement }) => {
 
   const dimensions = useMediaQuery();
   let isVertical = false;
@@ -48,11 +48,11 @@ const Footer = () => {
               <Menu isVertical className='' alignY={Alignments.MIDDLE}>
                 <MenuItem>
                   <a
-                    href='https://unsplash.com/@andreas_haslinger?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+                    href={acknowledgement.ownerLink}
                     target='_blank'
                     rel="noopener noreferrer"
                   >
-                    Controller photo by Andreas Haslinger
+                    {acknowledgement.owner}
                   </a>
                 </MenuItem>
                 <MenuItem>
