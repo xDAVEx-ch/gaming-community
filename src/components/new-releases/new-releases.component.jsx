@@ -15,7 +15,7 @@ const NewReleases = () => (
     <Grid>
 
       <Cell medium='7'>
-        <GameGrid maxNumItemsRow='3'/>
+        <GameGrid maxNumItemsRow='3' maxNumItems={6}/>
       </Cell>
 
       <Cell medium='5' className='align-self-middle'>

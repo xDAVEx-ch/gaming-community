@@ -34,7 +34,7 @@ const PreOrders = () => (
       </Cell>
 
       <Cell medium='7' flexContainer={true} alignX='right'>
-        <GameGrid maxNumItemsRow='3' position='right' />
+        <GameGrid maxNumItemsRow='3' position='right' maxNumItems={6} />
       </Cell>
 
     </Grid>
