@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "title": "Alice Madness Returns",
+    "imageUrl": "cover1"
+  },
+
+  {
+    "id": 2,
+    "title": "Bully: Scholarship Edition",
+    "imageUrl": "cover2"
+  },
+
+  {
+    "id": 3,
+    "title": "Crash N' Sanity Trilogy",
+    "imageUrl": "cover3"
+  },
+
+  {
+    "id": 4,
+    "title": "Driver San Francisco",
+    "imageUrl": "cover4"
+  },
+
+  {
+    "id": 5,
+    "title": "Alice Madness Returns",
+    "imageUrl": "cover1"
+  },
+
+  {
+    "id": 6,
+    "title": "Grand Theft Auto V",
+    "imageUrl": "cover5"
+  },
+
+  {
+    "id": 7,
+    "title": "Killing Floor 2",
+    "imageUrl": "cover6"
+  },
+
+  {
+    "id": 8,
+    "title": "Crash N' Sanity Trilogy",
+    "imageUrl": "cover3"
+  }
+]
