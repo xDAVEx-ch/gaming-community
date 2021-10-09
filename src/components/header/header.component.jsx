@@ -1,5 +1,5 @@
 //React imports
-import React from 'react';
+import React, {useState} from 'react';
 
 import { useLocation } from 'react-router-dom';
 
@@ -8,10 +8,14 @@ import {
   Menu,
   MenuItem,
   Alignments,
-  Button
+  Button,
+  Icon
 } from 'react-foundation';
 
 import { Link } from 'react-router-dom';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 //My imports
 import { ReactComponent as CartIcon } from './../../assets/svg/shopping-cart-solid.svg';
@@ -30,7 +34,7 @@ const Header = () => {
           <MenuItem>
 
             {
-              pathName.includes('/signup')
+              pathName.includes('/signup') || pathName.includes('/account')
               ? ''
               : (
                 <Link to='/signup'>
@@ -53,6 +57,15 @@ const Header = () => {
             </Link>
 
           </li>
+
+          <MenuItem className='show-for-small-only'>
+            <Link to='#'>
+              <Icon name="fi-list"/>
+              <span>
+                <FontAwesomeIcon icon={faBars} size='2x' pull='right'/>
+              </span>
+            </Link>
+          </MenuItem>
 
         </Menu>
 
