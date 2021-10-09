@@ -1,0 +1,85 @@
+@import './../../settings.scss';
+
+.user-dashboard-lvl-bar{
+  background-color: get-color(success);
+  width: 50%;
+  height: 16px;
+  position: relative;
+
+  @media screen and (max-width: 550px){
+    width: 60%;
+  }
+
+  &::after{
+    content: "";
+    background-color: get-color(warning);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30%;
+  }
+}
+
+.user-dashboard-container{
+  margin: 15px 0;
+}
+
+.user-dashboard-badge{
+  width: 70%;
+  height: 70%;
+
+  @media screen and (max-width: 1000px){
+    width: 50%;
+    height: 50%;
+  }
+
+  @media screen and (max-width: 850px){
+    width: 60%;
+    height: 60%;
+  }
+
+  @media screen and (max-width: 750px){
+    width: 50%;
+    height: 50%;
+  }
+
+  @media screen and (max-width: 600px){
+    width: 70%;
+    height: 70%;
+  }
+
+  @media screen and (max-width: 400px){
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.user-dashboard-recent-games{
+  width: 70%;
+  height: 70%;
+
+  @media screen and (max-width: 1000px){
+    width: 50%;
+    height: 50%;
+  }
+
+  @media screen and (max-width: 850px){
+    width: 60%;
+    height: 60%;
+  }
+
+  @media screen and (max-width: 750px){
+    width: 50%;
+    height: 50%;
+  }
+
+  @media screen and (max-width: 600px){
+    width: 70%;
+    height: 70%;
+  }
+
+  @media screen and (max-width: 400px){
+    width: 100%;
+    height: 100%;
+  }
+}
