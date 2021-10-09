@@ -15,11 +15,11 @@ const SignUpPage = () => {
   }
 
   return(
-    <main>
+    <>
       <Header />
       <SignUpForm />
       <Footer acknowledgement={acknowledgement}/>
-    </main>
+    </>
   );
 };
 
