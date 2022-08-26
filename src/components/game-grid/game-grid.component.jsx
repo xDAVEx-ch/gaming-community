@@ -3,8 +3,6 @@ import React from 'react';
 //Vendors imports
 import { Grid, Cell, Button } from 'react-foundation';
 
-import { Link } from 'react-router-dom';
-
 //My own imports
 import cover1 from './../../assets/alice-madness-cover.jpg';
 import gamesData from './../../static-data.json';

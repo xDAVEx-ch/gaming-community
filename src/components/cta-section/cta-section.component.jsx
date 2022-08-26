@@ -3,6 +3,8 @@ import React from 'react';
 //Vendors imports
 import { Button } from 'react-foundation';
 
+import { Link } from 'react-router-dom';
+
 import './cta-section.styles.scss';
 
 const CtaSection = () => (
@@ -20,7 +22,9 @@ const CtaSection = () => (
         <span className='cta-section-subtitle'>Like videogames?</span>
       </h3>
       <h2>Create an account with us</h2>
-      <Button isHollow className='cta-hollow-white-btn'>Sign up</Button>
+      <Link to='/signup' className='cta-link'>
+        <Button isHollow className='cta-hollow-white-btn'>Sign up</Button>
+      </Link>
     </div>
   </section>
 );

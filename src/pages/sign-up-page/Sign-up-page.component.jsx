@@ -16,7 +16,6 @@ const SignUpPage = () => {
 
   return(
     <>
-      <Header />
       <SignUpForm />
       <Footer acknowledgement={acknowledgement}/>
     </>

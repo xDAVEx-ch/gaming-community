@@ -16,7 +16,6 @@ const LogInPage = () => {
   
   return (
     <>
-      <Header />
       <LogInForm />
       <Footer acknowledgement={acknowledgement} />
     </>

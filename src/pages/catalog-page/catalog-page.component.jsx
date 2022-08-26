@@ -18,7 +18,6 @@ const CatalogPage = () =>{
 
   return(
     <>
-      <Header />
       <h1 className='text-center catalog-title'>Explore Games</h1>
       <div className='catalog-grid flex-container align-center'>
         <GameGrid maxNumItemsRow='4' position='center' buttonText='Buy'/>

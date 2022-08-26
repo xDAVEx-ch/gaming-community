@@ -23,11 +23,11 @@ const Sidebar = () =>(
     </div>
 
     <Menu isVertical className='text-center sidebar-menu'>
-      <MenuItem><Link>Account info</Link></MenuItem>
-      <MenuItem><Link>My events</Link></MenuItem>
-      <MenuItem><Link>My messages</Link></MenuItem>
-      <MenuItem><Link>My games</Link></MenuItem>
-      <MenuItem><Link>Log out</Link></MenuItem>
+      <MenuItem><Link to=''>Account info</Link></MenuItem>
+      <MenuItem><Link to=''>My events</Link></MenuItem>
+      <MenuItem><Link to=''>My messages</Link></MenuItem>
+      <MenuItem><Link to=''>My games</Link></MenuItem>
+      <MenuItem><Link to=''>Log out</Link></MenuItem>
     </Menu>
 
   </div>

@@ -12,7 +12,7 @@ import {
   Icon
 } from 'react-foundation';
 
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -26,50 +26,54 @@ const Header = () => {
   const pathName = useLocation().pathname;
 
   return (
-    <header class="top-bar" id="example-menu">
-      
-      <Link to='/' className='logo'>GAMING</Link>
-
-        <Menu alignment={Alignments.RIGHT}>
-          <MenuItem>
-
-            {
-              pathName.includes('/signup') || pathName.includes('/account')
-              ? ''
-              : (
-                <Link to='/signup'>
-                  <Button 
-                    isHollow 
-                    className='header-hollow-white-btn'
-                  >Sign up
-                  </Button>
-                </Link>
-              )
-            }
-
-          </MenuItem>
-
-          <li className='flex-container align-middle'>
-            <CartIcon style={{ width: '30px', height: '19px' }} />
-
-            <Link to='/cart' style={{ paddingLeft: '0.4rem' }}>
-              <span>My cart</span>
-            </Link>
-
-          </li>
-
-          <MenuItem className='show-for-small-only'>
-            <Link to='#'>
-              <Icon name="fi-list"/>
-              <span>
-                <FontAwesomeIcon icon={faBars} size='2x' pull='right'/>
-              </span>
-            </Link>
-          </MenuItem>
-
-        </Menu>
-
-    </header>
+    <>
+      <header class="top-bar" id="example-menu">
+        
+        <Link to='/' className='logo'>GAMING</Link>
+    
+          <Menu alignment={Alignments.RIGHT}>
+            <MenuItem>
+    
+              {
+                pathName.includes('/signup') || pathName.includes('/account')
+                ? ''
+                : (
+                  <Link to='/signup'>
+                    <Button 
+                      isHollow 
+                      className='header-hollow-white-btn'
+                    >Sign up
+                    </Button>
+                  </Link>
+                )
+              }
+  
+            </MenuItem>
+            
+            <li className='flex-container align-middle'>
+              <CartIcon style={{ width: '30px', height: '19px' }} />
+            
+              <Link to='/cart' style={{ paddingLeft: '0.4rem' }}>
+                <span>My cart</span>
+              </Link>
+            
+            </li>
+            
+            <MenuItem className='show-for-small-only'>
+              <Link to='#'>
+                <Icon name="fi-list"/>
+                <span>
+                  <FontAwesomeIcon icon={faBars} size='2x' pull='right'/>
+                </span>
+              </Link>
+            </MenuItem>
+            
+          </Menu>
+            
+      </header>
+            
+      <Outlet />
+    </>
   );
 };
 
